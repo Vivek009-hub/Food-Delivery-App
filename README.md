@@ -157,7 +157,7 @@ root/
 
 ## 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/Vivek009-hub/Food-Delivery-App
 cd your-repo
 ```
 
