@@ -24,7 +24,7 @@ import Shop from './pages/Shop'
 import { useEffect } from 'react'
 import { io } from 'socket.io-client'
 import { setSocket } from './redux/userSlice'
-export const serverURL = "http://localhost:8000"
+export const serverURL = "https://food-delivery-app-eyo7.onrender.com"
 const App = () => {
   userGetCurrentUser()
   useUpdateLocation()
