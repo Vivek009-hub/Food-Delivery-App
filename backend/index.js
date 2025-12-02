@@ -22,7 +22,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
     cors:{
-        origin: 'http://localhost:5173', // Replace with your frontend URL
+        origin: 'https://food-delivery-app-1-5dlf.onrender.com', // Replace with your frontend URL
         methods: ['GET','POST'],
         credentials: true,
     }
@@ -33,7 +33,7 @@ app.set('io',io); // making io accessible in routes via req.app.get('io')
 
 const PORT = process.env.PORT || 5000;
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend URL
+    origin: 'https://food-delivery-app-1-5dlf.onrender.com', // Replace with your frontend URL
     credentials: true, // Allow cookies to be sent
 }))
 app.use(express.json());
