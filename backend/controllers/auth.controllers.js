@@ -33,8 +33,8 @@ export const signUp=async (req, res) => {
         const token = await genToken(user._id);
         //  Now we have to pass this token in the cookie
         res.cookie("token",token,{
-            secure:true,
-            sameSite:"none",
+            secure:false,
+            sameSite:"strict",
             maxAge: 7*24*60*60*1000, // 7 days
             httpOnly:true,
         })
@@ -64,8 +64,8 @@ export const signIn=async (req, res) => {
         const token = await genToken(user._id);
         //  Now we have to pass this token in the cookie
         res.cookie("token",token,{
-            secure:true,
-            sameSite:"none",
+            secure:false,
+            sameSite:"strict",
             maxAge: 7*24*60*60*1000, // 7 days
             httpOnly:true,
         })
